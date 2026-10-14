@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[ZAMIERRE LABASAN] | Student Portfolio</title>
+  <meta name="description" content="Student portfolio of ZAMIERRE LABASAN: about me, skills, projects, latest GitHub repositories and contact details.">
+
+  <!-- Fonts: one for headings, one for body text (system fonts are used if these cannot load) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="#home" class="logo" aria-label="Go to top of page">[ZAMIERRE LABASAN]</a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ HOME ============ -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Hello, I'm ZAMIERRE LABASAN</h1>
+          <p class="tagline">Student Developer | Future IT Professional</p>
+          <p class="intro">
+            I am a second year Information Technology student interested in technology, programming and web
+            development, and creating simple, useful, and well-designed websites.
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View my projects</a>
+            <a href="#contact" class="btn btn-outline">Contact me</a>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <!-- Put your photo at images/profile.jpg (under 500 KB) -->
+          <img src="C:\Users\User\Desktop\zamierrelabasan.github.io\images\My Profile.png" alt="My Profile" width="300" height="300">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About me</h2>
+        <div class="about-grid">
+          <article class="card">
+            <h3>Biography</h3>
+            <p>My name is Zamierre Talledo Labasan, and I am from Macalong, Kasibu, Nueva Vizcaya. 
+              I am a second-year Bachelor of Science in Information Technology student majoring in Web and Mobile Development.
+              I enjoy learning about technology, web design, and programming. What motivates me is my desire to succeed, improve my skills, and build a better future for myself and my family. 
+              I believe that through hard work, patience, and determination, I can achieve my dreams and become a successful IT professional.</p>
+          </article>
+          <article class="card">
+            <h3>Education</h3>
+            <ul class="plain-list">
+              <li><strong>School:</strong> NUEVA VIZCAYA STATE UNIVERSITY</li>
+              <li><strong>Program:</strong> BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY MAJOR IN WEB AND MOBILE DEVELOPMENT</li>
+              <li><strong>Expected graduation:</strong> 2029 </li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Career goals</h3>
+            <p>I aim to gain experience through an internship, improve my web development skills, and learn from IT professionals. In the future, I aspire to become a successful web developer and create useful, user-friendly websites and applications.</p>
+          </article>
+          <article class="card">
+            <h3>Interests</h3>
+            <ul class="plain-list">
+              <li>Programming</li>
+              <li>Web development</li>
+              <li>Learning New Technologies</li>
+              <li>Database Management</li>
+              <li>Mobile App Development</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <article class="card">
+            <h3>Technical skills</h3>
+            <ul class="badges">
+              <li>Basic Web development</li>
+              <li>Basic Database Management</li>
+              <li>Basic Debugging</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Programming languages</h3>
+            <ul class="badges">
+              <li>Java</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>SQL</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Tools &amp; technologies</h3>
+            <ul class="badges">
+              <li>VS Code</li>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>MySQL</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Soft skills</h3>
+            <ul class="badges">
+              <li>Problem-solving</li>
+              <li>Creativity</li>
+              <li>Teamwork</li>
+              <li>Time management</li>
+              <li>Adaptability</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <!-- Cards are generated by js/script.js from data/projects.json -->
+        <div id="projectsGrid" class="projects-grid" aria-live="polite">
+          <p class="status-message">Personal Web page</p>
+        </div>
+
+        <h3 class="subheading">Latest GitHub repositories</h3>
+        <!-- Filled by js/script.js using the GitHub REST API -->
+        <ul id="repoList" class="repo-list" aria-live="polite">
+          <li class="status-message">zamierrelabasan.github.io</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-grid">
+
+          <div class="card">
+            <h3>Get in touch</h3>
+            <ul class="plain-list">
+              <li><strong>Email:</strong> <a href="mailto:zamierrelabasan@gmail.com">zamierrelabasan@gmail.com</a></li>
+              <li><strong>GitHub:</strong> <a href="https://github.com/zamierrelabasan" target="_blank" rel="noopener">github.com/zamierrelabasan</a></li>
+              <li><strong>Instagram:</strong> <a href="https://www.instagram.com/in/zvmie__" target="_blank" rel="noopener noreferrer">@zvmie__</a></li>
+            </ul>
+          </div>
+
+          <form class="card" id="contactForm" novalidate>
+            <h3>Send a message</h3>
+
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name">
+              <span class="error" id="nameError" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email">
+              <span class="error" id="emailError" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5"></textarea>
+              <span class="error" id="messageError" role="alert"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send message</button>
+            <p class="form-success" id="formSuccess" role="status"></p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Zamierre Labasan &ndash; Student Portfolio</p>
+      <p>
+        <a href="https://github.com/zamierrelabasan" target="_blank" rel="noopener">GitHub</a>
+        &nbsp;|&nbsp;
+        <a href="https://www.instagram.com/in/zvmie__" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Personal feature: Back to top button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
