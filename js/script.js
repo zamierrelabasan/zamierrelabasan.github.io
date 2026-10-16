@@ -39,7 +39,7 @@ async function loadProjects() {
     }
     const projects = await response.json();   // parse the JSON
 
-    projectsGrid.innerHTML = "https://github.com/zamierrelabasan/zamierrelabasan.github.io.git";               // remove "Loading..." text
+    projectsGrid.innerHTML = "";               // remove "Loading..." text
     projects.forEach(function (project) {
       projectsGrid.appendChild(createProjectCard(project));
       } catch (error) {
