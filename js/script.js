@@ -218,3 +218,38 @@ backToTop.addEventListener("click", function () {
 /* ---------- Start ---------- */
 loadProjects();
 loadRepos();
+document.addEventListener("DOMContentLoaded", function () {
+    const contactForm = document.querySelector("#contactForm");
+
+    if (!contactForm) return;
+
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const name = contactForm.querySelector('[name="name"]').value.trim();
+        const email = contactForm.querySelector('[name="email"]').value.trim();
+        const message = contactForm.querySelector('[name="message"]').value.trim();
+
+        if (!name || !email || !message) {
+            alert("Please complete all fields before sending.");
+            return;
+        }
+
+        const recipient = "YOUR_EMAIL@gmail.com";
+
+        const subject = encodeURIComponent(
+            "Portfolio Message from " + name
+        );
+
+        const body = encodeURIComponent(
+            "Name: " + name +
+            "\nEmail: " + email +
+            "\n\nMessage:\n" + message
+        );
+
+        window.location.href =
+            "mailto:" + recipient +
+            "?subject=" + subject +
+            "&body=" + body;
+    });
+});
