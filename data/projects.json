@@ -4,7 +4,7 @@
     "description": "A personal website showcasing my profile, educational background and other personal information about me",
     "technologies": ["HTML"],
     "role": "Designer and developer",
-    "screenshot": "images/project1(1).png",
+    "screenshot": "images/project1.png",
     "link": "https://zamierrelabasan.github.io/My-Portfolio/"
   },
   {
@@ -12,7 +12,7 @@
     "description": "A simple and elegant login page featuring username and password fields",
     "technologies": ["CSS", "HTML"],
     "role": "Developer",
-    "screenshot": "images/project(2).png",
+    "screenshot": "images/project2.png",
     "link": "https://zamierrelabasan.github.io/Log-in-Page/"
   }
 ]
