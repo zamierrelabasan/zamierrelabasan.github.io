@@ -37,18 +37,18 @@ async function loadProjects() {
     if (!response.ok) {
       throw new Error("HTTP status " + response.status);
     }
-    const projects = await response.json();   // parse the JSON
+    const projects = await response.json();
 
-    projectsGrid.innerHTML = "";               // remove "Loading..." text
+    projectsGrid.innerHTML = "";
     projects.forEach(function (project) {
       projectsGrid.appendChild(createProjectCard(project));
-      } catch (error) {
+    });
+  } catch (error) {
     console.warn("Projects could not be loaded:", error.message);
     projectsGrid.innerHTML =
       '<p class="status-message error">Unable to load projects. Please try again later.</p>';
   }
 }
-    });
   
 // Build one project card (textContent is used so data is never run as HTML)
 function createProjectCard(project) {
