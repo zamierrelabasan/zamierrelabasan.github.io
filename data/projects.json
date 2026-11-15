@@ -14,5 +14,12 @@
     "role": "Developer",
     "screenshot": "images/project2.png",
     "link": "https://zamierrelabasan.github.io/Log-in-Page/"
-  }
+  },
+  {
+    "title": "Water Intake Tracker App",
+    "description": "A simple water intake traker to help with hydration and be healthy",
+    "technologies": ["CSS", "HTML, JAVASCRIPT, JSON"],
+    "role": "Designer and Developer",
+    "screenshot": "images/aquatrackproject.png",
+    "link": "https://hydrationaqua.netlify.app/"
 ]
